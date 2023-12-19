@@ -1,0 +1,116 @@
+@font-face {
+    font-family: customFont;
+    src: url(./fonts/Norse-Bold.otf); 
+}
+:root {
+    --green-color: #596D48;
+    --light-color: #E5E7EB;
+    --error-color: #380d14;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 33, 21);
+}
+
+.logo {
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.71);
+    margin: 15rem 0; 
+    display: flex;
+    justify-content: center;
+}
+.logo>p {
+    font-family: customFont;
+    color: white;
+    font-size: 4rem;
+    display:flex;
+    align-items: center;    
+}
+
+.mainContainer {
+    height: 70vh;
+    width: 70vw;
+    min-height: fit-content;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 15px 5px var(--green-color);
+    display: flex;
+    
+    
+}
+
+.leftContainer {
+    width: 25vw;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1700573941847-d42179081698?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    border-radius: 10px 0 0 10px;
+    
+}
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+form {
+    box-shadow: 10px 5px 5px #F5F5F5;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset > div {
+    display: flex;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}  
+label {
+    font-size: 0.75rem;
+} 
+.top>p, form>p {
+    font-size: 1.5rem;
+    margin: 20px 10px;
+} 
+
+.bottom {
+    font-size: 1rem;
+    margin: 10px;
+}
+button {
+    padding: 15px 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--green-color);
+    color: var(--light-color)
+}
+span {
+    color: var(--green-color);
+    font-weight: bold;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--green-color);
+    box-shadow: 0px 0px 5px 2px var(--light-color);
+}
+input:invalid {
+    outline: none;
+    border: 2px solid red;
+}
+
+
+
